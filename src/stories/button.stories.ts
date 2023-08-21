@@ -19,9 +19,15 @@ const meta = {
         "ghost",
         "link",
       ],
+      control: { type: "radio" },
+      defaultValue: "default",
+      description:
+        "Changes the look and feel of the button to match the context of the page.",
+      type: { name: "string", required: false },
     },
     size: { options: ["default", "sm", "lg", "icon"] },
-    asChild: { control: "boolean" },
+    asChild: { type: "boolean", defaultValue: false },
+    children: { type: "string", defaultValue: "Button" },
   },
 } satisfies Meta<typeof Button>;
 
@@ -30,6 +36,7 @@ type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
   args: {
-    children: "Button",
+    variant: "default",
+    size: "default",
   },
 };
