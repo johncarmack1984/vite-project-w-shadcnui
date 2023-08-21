@@ -1,71 +1,85 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
- 
+
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --color-1: 0 0% 100%;
+    --color-2: 0 0% 11%;
+    --color-3: 189 53% 30%;
+    --color-4: 0 0% 94%;
+    --color-5: 175 46% 95%;
+    --color-6: 174 35% 47%;
+    --color-7: 0 86% 60%;
+    --color-8: 174 53% 68%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
- 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
- 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
- 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
- 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
- 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
- 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --background: var(--color-1);
+    --foreground: var(--color-2);
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
- 
+    --card: var(--color-1);
+    --card-foreground: var(--color-2);
+
+    --popover: var(--color-1);
+    --popover-foreground: var(--color-2);
+
+    --primary: var(--color-3);
+    --primary-foreground: var(--color-4);
+
+    --secondary: var(--color-5);
+    --secondary-foreground: var(--color-3);
+
+    --muted: var(--color-5);
+    --muted-foreground: var(--color-6);
+
+    --accent: var(--color-5);
+    --accent-foreground: var(--color-3);
+
+    --destructive: var(--color-7);
+    --destructive-foreground: var(--color-4);
+
+    --border: var(--color-8);
+    --input: var(--color-8);
+    --ring: var(--color-2);
+
     --radius: 0.5rem;
   }
- 
+
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
- 
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
- 
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
- 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
- 
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
- 
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
- 
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
- 
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
- 
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
+    --color-9: 175 46% 11%;
+    --color-10: 173 20.2% 65.1%;
+    --color-11: 0 86% 30.6%;
+    --color-12: var(--color-8);
+
+    --background: var(--color-2);
+    --foreground: var(--color-4);
+
+    --card: var(--color-2);
+    --card-foreground: var(--color-4);
+
+    --popover: var(--color-2);
+    --popover-foreground: var(--color-4);
+
+    --primary: var(--color-4);
+    --primary-foreground: var(--color-3);
+
+    --secondary: var(--color-9);
+    --secondary-foreground: var(--color-4);
+
+    --muted: var(--color-9);
+    --muted-foreground: var(--color-10);
+
+    --accent: var(--color-9);
+    --accent-foreground: var(--color-4);
+
+    --destructive: var(--color-11);
+    --destructive-foreground: var(--color-4);
+
+    --border: var(--color-9);
+    --input: var(--color-9);
+    --ring: var(--color-12);
   }
 }
- 
+
 @layer base {
   * {
     @apply border-border;
