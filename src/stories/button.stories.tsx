@@ -25,8 +25,11 @@ const meta = {
         "Changes the look and feel of the button to match the context of the page.",
       type: { name: "string", required: false },
     },
-    size: { options: ["default", "sm", "lg", "icon"], defaultValue: "default" },
-    asChild: { type: "boolean", defaultValue: false },
+    size: {
+      options: ["default", "sm", "lg", "icon"],
+      defaultValue: "default",
+      control: "inline-radio",
+    },
     children: { type: "string", defaultValue: "Button" },
   },
 } satisfies Meta<typeof Button>;
@@ -34,7 +37,23 @@ const meta = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 
+const ButtonTemplate: Story = {
+  render: ({ children, ...args }) => {
+    return (
+      <div className="flex flex-row">
+        <div className="p-5 border-2 rounded-l-md">
+          <Button {...args}>{children}</Button>
+        </div>
+        <div className="dark p-5 bg-background rounded-r-md">
+          <Button {...args}>{children}</Button>
+        </div>
+      </div>
+    );
+  },
+};
+
 export const Default: Story = {
+  ...ButtonTemplate,
   args: {
     variant: "default",
     size: "default",
@@ -43,6 +62,7 @@ export const Default: Story = {
 };
 
 export const Destructive: Story = {
+  ...ButtonTemplate,
   args: {
     variant: "destructive",
     size: "default",
@@ -51,6 +71,7 @@ export const Destructive: Story = {
 };
 
 export const Outline: Story = {
+  ...ButtonTemplate,
   args: {
     variant: "outline",
     size: "default",
@@ -59,6 +80,7 @@ export const Outline: Story = {
 };
 
 export const Secondary: Story = {
+  ...ButtonTemplate,
   args: {
     variant: "secondary",
     size: "default",
@@ -67,6 +89,7 @@ export const Secondary: Story = {
 };
 
 export const Ghost: Story = {
+  ...ButtonTemplate,
   args: {
     variant: "ghost",
     size: "default",
@@ -75,6 +98,7 @@ export const Ghost: Story = {
 };
 
 export const Link: Story = {
+  ...ButtonTemplate,
   args: {
     variant: "link",
     size: "default",
@@ -83,6 +107,7 @@ export const Link: Story = {
 };
 
 export const Small: Story = {
+  ...ButtonTemplate,
   args: {
     variant: "default",
     size: "sm",
@@ -91,6 +116,7 @@ export const Small: Story = {
 };
 
 export const Large: Story = {
+  ...ButtonTemplate,
   args: {
     variant: "default",
     size: "lg",
@@ -99,6 +125,7 @@ export const Large: Story = {
 };
 
 export const Icon: Story = {
+  ...ButtonTemplate,
   args: {
     variant: "default",
     size: "icon",
