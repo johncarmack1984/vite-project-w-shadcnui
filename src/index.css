@@ -4,6 +4,8 @@
 
 @layer base {
   :root {
+    --font-beautiful-heart: "Beautiful Heart", cursive;
+    --font-isidora-sans: "Isidora Sans", sans-serif;
     --color-1: 0 0% 100%;
     --color-2: 0 0% 11%;
     --color-3: 189 53% 30%;
@@ -87,4 +89,65 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+@font-face {
+  font-family: "Beautiful Heart";
+  src: url("/fonts/beautiful-heart.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Isidora Sans";
+  src: url("/fonts/isidora-sans/IsidoraSans-Bold.woff2") format("woff2");
+  font-display: swap;
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Isidora Sans";
+  src: url("/fonts/isidora-sans/IsidoraSans-Black.woff2") format("woff2");
+  font-display: swap;
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Isidora Sans";
+  src: url("/fonts/isidora-sans/IsidoraSans-Medium.woff2") format("woff2");
+  font-display: swap;
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Isidora Sans";
+  src: url("/fonts/isidora-sans/IsidoraSans-Light.woff2") format("woff2");
+  font-display: swap;
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Isidora Sans";
+  src: url("/fonts/isidora-sans/IsidoraSans-Regular.woff2") format("woff2");
+  font-display: swap;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Isidora Sans";
+  src: url("/fonts/isidora-sans/IsidoraSans-SemiBold.woff2") format("woff2");
+  font-display: swap;
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Isidora Sans";
+  src: url("/fonts/isidora-sans/IsidoraSans-Thin.woff2") format("woff2");
+  font-display: swap;
+  font-weight: 100;
+  font-style: normal;
 }
