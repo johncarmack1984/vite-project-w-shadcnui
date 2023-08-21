@@ -42,6 +42,46 @@ export const Default: Story = {
   },
 };
 
+export const Destructive: Story = {
+  args: {
+    variant: "destructive",
+    size: "default",
+    children: meta.argTypes.children.defaultValue,
+  },
+};
+
+export const Outline: Story = {
+  args: {
+    variant: "outline",
+    size: "default",
+    children: meta.argTypes.children.defaultValue,
+  },
+};
+
+export const Secondary: Story = {
+  args: {
+    variant: "secondary",
+    size: "default",
+    children: meta.argTypes.children.defaultValue,
+  },
+};
+
+export const Ghost: Story = {
+  args: {
+    variant: "ghost",
+    size: "default",
+    children: meta.argTypes.children.defaultValue,
+  },
+};
+
+export const Link: Story = {
+  args: {
+    variant: "link",
+    size: "default",
+    children: meta.argTypes.children.defaultValue,
+  },
+};
+
 export const Small: Story = {
   args: {
     variant: "default",
