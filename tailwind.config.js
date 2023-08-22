@@ -21,9 +21,20 @@ export const tailwindConfig = {
         script: ["var(--font-beautiful-heart)"],
       },
       colors: {
-        border: "hsl(var(--border))",
-        input: "hsl(var(--input))",
-        ring: "hsl(var(--ring))",
+        palette: {
+          1: "hsl(var(--color-1))",
+          2: "hsl(var(--color-2))",
+          3: "hsl(var(--color-3))",
+          4: "hsl(var(--color-4))",
+          5: "hsl(var(--color-5))",
+          6: "hsl(var(--color-6))",
+          7: "hsl(var(--color-7))",
+          8: "hsl(var(--color-8))",
+          9: "hsl(var(--color-9))",
+          10: "hsl(var(--color-10))",
+          11: "hsl(var(--color-11))",
+          12: "hsl(var(--color-12))",
+        },
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         primary: {
@@ -34,6 +45,9 @@ export const tailwindConfig = {
           DEFAULT: "hsl(var(--secondary))",
           foreground: "hsl(var(--secondary-foreground))",
         },
+        border: "hsl(var(--border))",
+        input: "hsl(var(--input))",
+        ring: "hsl(var(--ring))",
         destructive: {
           DEFAULT: "hsl(var(--destructive))",
           foreground: "hsl(var(--destructive-foreground))",

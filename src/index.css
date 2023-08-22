@@ -6,17 +6,21 @@
   :root {
     --font-beautiful-heart: "Beautiful Heart", cursive;
     --font-isidora-sans: "Isidora Sans", sans-serif;
-    --color-1: 0 0% 100%;
-    --color-2: 0 0% 11%;
+    --color-1: 0 0% 100%; /* White */
+    --color-2: 0 0% 9%; /* Rich Black */
     --color-3: 189 53% 30%;
     --color-4: 0 0% 94%;
     --color-5: 175 46% 95%;
     --color-6: 174 35% 47%;
     --color-7: 0 86% 60%;
-    --color-8: 174 53% 68%;
+    --color-8: 174 53% 68%; /* Tiffany Blue */
+    --color-9: 175 46% 18%;
+    --color-10: 173 20.2% 65.1%;
+    --color-11: 0 86% 30.6%;
+    --color-12: var(--color-8);
 
     --background: var(--color-1);
-    --foreground: var(--color-2);
+    --foreground: var(--color-8);
 
     --card: var(--color-1);
     --card-foreground: var(--color-2);
@@ -47,13 +51,8 @@
   }
 
   .dark {
-    --color-9: 175 46% 18%;
-    --color-10: 173 20.2% 65.1%;
-    --color-11: 0 86% 30.6%;
-    --color-12: var(--color-8);
-
     --background: var(--color-2);
-    --foreground: var(--color-4);
+    --foreground: var(--color-8);
 
     --card: var(--color-2);
     --card-foreground: var(--color-4);
