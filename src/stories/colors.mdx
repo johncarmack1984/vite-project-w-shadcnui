@@ -1,0 +1,26 @@
+import { Meta, ColorPalette, ColorItem } from "@storybook/blocks";
+import { parse } from "../lib/parse";
+import themeConfig from "../../tailwind.config.js";
+import theme from "../index.css?inline";
+
+
+<Meta title="Colors" />
+
+
+<ColorPalette>
+  {Object.entries(themeConfig.theme.extend.colors).map(([k,v]) => {
+    const obj = {};
+    const variable = parse(v);
+    if (typeof variable === "string") {
+      const value = (getComputedStyle(document.body).getPropertyValue(variable));
+      obj[k] = `hsl(${value})`;
+    } 
+    else {
+      Object.assign(obj, ...variable);
+      for (const [key, value] of Object.entries(obj)) {
+        obj[key] = `hsl(${getComputedStyle(document.body).getPropertyValue(value)})`;
+      }
+    }
+      return <ColorItem key={k} title={k} subtitle=" " colors={obj} />
+  })}
+</ColorPalette>
