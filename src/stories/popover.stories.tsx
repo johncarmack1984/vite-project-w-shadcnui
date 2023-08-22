@@ -55,10 +55,3 @@ export const Default: Story = {
     children: meta.argTypes.children.defaultValue,
   },
 };
-
-export const AsModal: Story = {
-  ...PopoverTemplate,
-  args: {
-    children: meta.argTypes.children.defaultValue,
-  },
-};
