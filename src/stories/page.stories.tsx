@@ -28,48 +28,48 @@ const PageLayout: Story = {
   },
 };
 
-export const OGBelle: Story = {
-  ...PageLayout,
-  args: {
-    children: (
-      <>
-        <header>
-          <section className="bg-primary-foreground text-background flex">
-            <h1 className="p-5 text-2xl md:text-4xl font-script">
-              RingMyBelle
-            </h1>
-            <span>Choose Location</span>
-          </section>
-          <nav className="flex list-none">
-            <li>Home</li>
-            <li>Book</li>
-            <li>Join</li>
-          </nav>
-        </header>
-        <main>
-          <section className="">
-            <h2>Beauty at Your Door</h2>
-          </section>
-          <section className="">
-            <ul>
-              <li>Hair</li>
-              <li>Make Up</li>
-              <li>Spray Tan</li>
-              <li>Bridal</li>
-              <li>Girls Night Out</li>
-            </ul>
-          </section>
-          <section className=""></section>
-          <section className=""></section>
-          <section className=""></section>
-        </main>
-        <footer className="bg-primary-foreground">
-          <h3 className="font-script">RingMyBelle</h3>
-        </footer>
-      </>
-    ),
-  },
-};
+// export const OGBelle: Story = {
+//   ...PageLayout,
+//   args: {
+//     children: (
+//       <>
+//         <header>
+//           <section className="bg-primary-foreground text-background flex">
+//             <h1 className="p-5 text-2xl md:text-4xl font-script">
+//               RingMyBelle
+//             </h1>
+//             <span>Choose Location</span>
+//           </section>
+//           <nav className="flex list-none">
+//             <li>Home</li>
+//             <li>Book</li>
+//             <li>Join</li>
+//           </nav>
+//         </header>
+//         <main>
+//           <section className="">
+//             <h2>Beauty at Your Door</h2>
+//           </section>
+//           <section className="">
+//             <ul>
+//               <li>Hair</li>
+//               <li>Make Up</li>
+//               <li>Spray Tan</li>
+//               <li>Bridal</li>
+//               <li>Girls Night Out</li>
+//             </ul>
+//           </section>
+//           <section className=""></section>
+//           <section className=""></section>
+//           <section className=""></section>
+//         </main>
+//         <footer className="bg-primary-foreground">
+//           <h3 className="font-script">RingMyBelle</h3>
+//         </footer>
+//       </>
+//     ),
+//   },
+// };
 
 export const BelleSquad: Story = {
   ...PageLayout,

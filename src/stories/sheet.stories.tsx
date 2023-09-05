@@ -15,7 +15,7 @@ import {
 } from "@/components/ui/sheet";
 
 const meta = {
-  title: "Sheet",
+  title: "Components/Sheet",
   component: Sheet,
 } as Meta<typeof Sheet>;
 

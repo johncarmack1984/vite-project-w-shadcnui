@@ -8,7 +8,7 @@ import {
 import { Button } from "@/components/ui/button";
 
 const meta = {
-  title: "Popover",
+  title: "Components/Popover",
   component: Popover,
   parameters: {
     layout: "centered",
