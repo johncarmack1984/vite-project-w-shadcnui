@@ -10,6 +10,7 @@ const config: StorybookConfig = {
       name: "@storybook/addon-styling",
       options: {},
     },
+    "@storybook/addon-mdx-gfm"
   ],
   staticDirs: ["../public"],
   framework: {
