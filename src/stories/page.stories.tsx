@@ -140,6 +140,8 @@ const Hero = () => {
     <section className="flex flex-col items-center justify-center relative p-0 m-0 z-10 text-secondary aspect-[9/16] sm:aspect-video">
       <video
         autoPlay
+        loop
+        preload="auto"
         src="/video/AdobeStock_501627665_Video_HD_Preview.mp4"
         className="absolute inset-0 w-full h-full object-cover -z-10"
       ></video>
