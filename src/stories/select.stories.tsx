@@ -24,7 +24,7 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 const SelectRender: Story = {
-  render: ({ children, ...args }) => {
+  render: ({ ...args }) => {
     return (
       <div className="flex flex-row">
         <div className="p-5 border-2 rounded-l-md">

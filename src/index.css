@@ -28,11 +28,11 @@
     --popover: var(--color-1);
     --popover-foreground: var(--color-2);
 
-    --primary: var(--color-3);
-    --primary-foreground: var(--color-5);
+    --primary: var(--color-4);
+    --primary-foreground: var(--color-1);
 
     --secondary: var(--color-5);
-    --secondary-foreground: var(--color-3);
+    --secondary-foreground: var(--color-2);
 
     --muted: var(--color-5);
     --muted-foreground: var(--color-6);
