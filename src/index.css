@@ -29,7 +29,7 @@
     --popover-foreground: var(--color-2);
 
     --primary: var(--color-3);
-    --primary-foreground: var(--color-4);
+    --primary-foreground: var(--color-5);
 
     --secondary: var(--color-5);
     --secondary-foreground: var(--color-3);
@@ -41,7 +41,7 @@
     --accent-foreground: var(--color-3);
 
     --destructive: var(--color-7);
-    --destructive-foreground: var(--color-4);
+    --destructive-foreground: var(--color-1);
 
     --border: var(--color-8);
     --input: var(--color-8);
@@ -72,7 +72,7 @@
     --accent-foreground: var(--color-4);
 
     --destructive: var(--color-11);
-    --destructive-foreground: var(--color-4);
+    --destructive-foreground: var(--color-1);
 
     --border: var(--color-9);
     --input: var(--color-9);
