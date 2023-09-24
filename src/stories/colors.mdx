@@ -1,0 +1,50 @@
+import { Meta, ColorPalette, ColorItem } from "@storybook/blocks";
+import { parse } from "@/lib/parse";
+import themeConfig from "../../tailwind.config.js";
+
+<Meta title="StyleGuide/Colors" />
+
+<ColorPalette>
+  {Object.entries(themeConfig.theme.extend.colors).map(([k, v]) => {
+    const obj = {};
+    const variable = parse(v);
+    if (typeof variable === "string") {
+      const value = getComputedStyle(document.body).getPropertyValue(variable);
+      obj[k] = `hsl(${value})`;
+      document.body.className += ` dark`;
+      const darkValue = getComputedStyle(document.body).getPropertyValue(
+        variable
+      );
+      obj[`.dark ${k}`] = `hsl(${darkValue})`;
+      document.body.className -= ` dark`;
+    } else {
+      Object.assign(obj, ...variable);
+      let tempObj = {};
+      for (const [key, value] of Object.entries(obj)) {
+        if (k !== "palette") tempObj[`.dark ${key}`] = value;
+        obj[key] = `hsl(${getComputedStyle(document.body).getPropertyValue(
+          value
+        )})`;
+      }
+      if (k !== "palette") {
+        document.body.className += ` dark`;
+        for (const [key, value] of Object.entries(tempObj)) {
+          obj[key] = `hsl(${getComputedStyle(document.body).getPropertyValue(
+            value
+          )})`;
+        }
+        document.body.className -= ` dark`;
+      }
+    }
+    return (
+      <ColorItem
+        key={k}
+        title={k}
+        subtitle={`theme.colors.extend.${k}`}
+        colors={obj}
+      />
+    );
+
+})}
+
+</ColorPalette>
